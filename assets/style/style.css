@@ -1,0 +1,184 @@
+.reset{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    font-family:"Georgia", Times, "Times New Roman", serif;
+	min-height:100vh;
+	display:flex;
+	flex-direction:column;
+}
+
+.content row{
+	width:100%;
+}
+
+.myHeader{
+    background-color:lightgray;
+}
+
+.myName h1{
+	background-color:#4aaaa5;
+	width:max-content;
+	color:#ffffff;
+	padding:25px;
+}
+
+.myNav{
+    margin:auto;
+    padding:auto;
+}
+
+.nav{
+    /* float:right; */
+    justify-content: right;
+    justify-self:right;
+}
+
+.nav-link{
+    color:rgb(100, 98, 98);
+    padding:10px 5px;
+}
+
+.headerLine{
+    width:100%;
+	height:1px;
+	background:rgb(179, 179, 179);
+}
+
+.contentHeader{
+    margin:0px 0px;
+    padding:0px 0px;
+	color:#4aaaa5;
+	font-size:25px;
+	margin:10px 0px 20px 0px;
+}
+
+.contentHeader h2{
+    margin:0px 10px;
+}
+
+.content{
+    margin:20px;
+    padding:20px;
+}
+
+.myHeader h1{
+    margin:0px 56px;
+}
+
+.contentBox{
+	border:1px solid lightgray;
+	border-radius:1%;
+	padding:10px 15px;
+}
+
+.floatMy{
+	float:left;
+    width:200px;
+    height:200px;
+}
+
+.card-body{
+    margin:auto auto;
+}
+
+.contentHeader h2{
+	font-size:28px;
+}
+
+.myContainer{
+	flex:1;
+}
+
+.footer{
+	border-top:5px solid gray;
+	height:50px;
+	background-color:#4aaaa5;
+	color:white;
+	text-align:center;
+	
+}
+
+.card-img-overlay{
+	margin:0px;
+	padding:0px;
+	
+}
+
+.card-img-overlay a{
+	text-decoration:none;
+	color:white;
+	
+}
+
+.card p{
+	position:absolute;
+	width:100%;
+	height:40px;
+	bottom:5px;
+	background-color:#4aaaa5;
+	text-align:center;
+	padding-top:10px;
+	
+}
+
+.contentPara .myPort{
+
+	padding:10px;
+}
+
+@media screen and (max-width:640px){
+    .myHeader h1{
+        margin:0px 0px;
+    }
+
+    .myName h1{
+        background-color:#4aaaa5;
+        width:100%;        
+        text-align:center;
+        color:#ffffff;
+        padding:25px;
+        font-family:"Georgia", Times, "Times New Roman", serif;
+    }
+
+    .nav{
+        justify-content: center;
+    }
+	
+	.floatMy{
+		clear:both;
+		width:100%;
+		height:auto;
+}
+
+}
+
+@media screen and (min-width:641px) and (max-width:768px){
+    .myHeader h1{
+        margin:0px 0px;
+    }
+    
+    .myName h1{
+        background-color:#4aaaa5;
+        width:100%;        
+        text-align:center;
+        color:#ffffff;
+        padding:25px;
+        font-family:"Georgia", Times, "Times New Roman", serif;
+    }
+
+    .nav{
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:980px){
+    
+}
+
+@media screen and (min-width:981px){
+    
+}
