@@ -28,12 +28,14 @@ body{
 .myNav{
     margin:auto;
     padding:auto;
+    padding-right:70px;
 }
 
 .nav{
-    /* float:right; */
-    justify-content: right;
-    justify-self:right;
+    /* float:right doesnt work cause float will be
+      ignored in flex box */
+    justify-content: flex-end;
+
 }
 
 .nav-link{
@@ -66,10 +68,12 @@ body{
 
 .myHeader h1{
     margin:0px 56px;
+    font-size:45px;
+    padding:20px 25px;
 }
 
 .contentBox{
-	border:1px solid lightgray;
+	border:1px solid #d3d3d3;
 	border-radius:1%;
 	padding:10px 15px;
 }
@@ -85,7 +89,8 @@ body{
 }
 
 .contentHeader h2{
-	font-size:28px;
+    font-size:28px;
+    padding-bottom: 10px;
 }
 
 .myContainer{
@@ -97,20 +102,23 @@ body{
 	height:50px;
 	background-color:#4aaaa5;
 	color:white;
-	text-align:center;
-	
+    text-align:center;
+}
+
+.footer span{
+    margin-top:20px;
 }
 
 .card-img-overlay{
 	margin:0px;
-	padding:0px;
-	
+	padding:0px;	
 }
 
 .card-img-overlay a{
 	text-decoration:none;
-	color:white;
-	
+    color:white;
+    margin:0px;
+    padding:0px;	
 }
 
 .card p{
@@ -120,16 +128,24 @@ body{
 	bottom:5px;
 	background-color:#4aaaa5;
 	text-align:center;
-	padding-top:10px;
-	
+	padding-top:10px;	
+}
+
+.myPortAll{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
 }
 
 .contentPara .myPort{
-
-	padding:10px;
+    padding:10px;
+    flex:0 1 auto;
+    width:350px;
+    height:auto;
 }
 
-@media screen and (max-width:640px){
+@media screen and (max-width:670px){
+    
     .myHeader h1{
         margin:0px 0px;
     }
@@ -139,23 +155,67 @@ body{
         width:100%;        
         text-align:center;
         color:#ffffff;
-        padding:25px;
+        padding:20px 25px;
         font-family:"Georgia", Times, "Times New Roman", serif;
     }
 
     .nav{
         justify-content: center;
+        align-items: center;
+        height:60px;
+    
     }
-	
-	.floatMy{
-		clear:both;
-		width:100%;
-		height:auto;
-}
+    
+    .myNav{
+        padding-right:0px;
+        height:60px;
+    }
+
+    /* using flex box to locate the picture */
+
+    .picture{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .floatMy{
+        flex:1;
+		width:280px;
+        height:auto;
+        align-self: center;
+    }
+
+    .myPortAll{
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+    .contentPara .myPort{
+        padding:10px;
+        flex:0 1 auto;
+        align-self: center;
+    }
+
+    /* .card .card-img{
+        width:200px;
+        height:auto;
+        align-self: center;
+    }
+
+    .card p{
+        position:absolute;
+        width:100%;
+        height:40px;
+        bottom:5px;
+        background-color:#4aaaa5;
+        text-align:center;
+        padding-top:10px;
+        
+    } */
 
 }
 
-@media screen and (min-width:641px) and (max-width:768px){
+@media screen and (min-width:671px) and (max-width:768px){
     .myHeader h1{
         margin:0px 0px;
     }
@@ -165,13 +225,33 @@ body{
         width:100%;        
         text-align:center;
         color:#ffffff;
-        padding:25px;
+        padding:20px 25px;
         font-family:"Georgia", Times, "Times New Roman", serif;
     }
 
     .nav{
         justify-content: center;
+        align-items: center;
+        height:60px;
     }
+
+    .myNav{
+        padding-right:0px;
+        height:60px;
+    }
+
+    .myPortAll{
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+    .contentPara .myPort{
+        padding:10px;
+        flex:0 1 auto;
+        align-self: center;
+    }
+
+
 
 }
 
