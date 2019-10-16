@@ -8,7 +8,7 @@ body{
 	min-height:100vh;
 	display:flex;
     flex-direction:column;
-    background-image:url(../Picture/leather.png);
+    background-image:url(../picture/leather.png);
 }
 
 .content row{
