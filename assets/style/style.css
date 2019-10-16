@@ -4,10 +4,11 @@
 }
 
 body{
-    font-family:"Georgia", Times, "Times New Roman", serif;
+    font-family: 'Ubuntu', sans-serif;
 	min-height:100vh;
 	display:flex;
-	flex-direction:column;
+    flex-direction:column;
+    background-image:url(../Picture/leather.png);
 }
 
 .content row{
@@ -15,7 +16,8 @@ body{
 }
 
 .myHeader{
-    background-color:lightgray;
+    background-color:rgb(243, 241, 241);
+    border-bottom:1px solid rgb(179, 177, 177);
 }
 
 .myName h1{
@@ -35,12 +37,19 @@ body{
     /* float:right doesnt work cause float will be
       ignored in flex box */
     justify-content: flex-end;
+    background-color:white;
 
 }
 
 .nav-link{
     color:rgb(100, 98, 98);
     padding:10px 5px;
+}
+
+.nav-link:hover{
+    color:rgb(112, 111, 111);
+    background-color:rgb(191, 190, 190);
+    border-radius:20%;
 }
 
 .headerLine{
@@ -66,6 +75,10 @@ body{
     padding:20px;
 }
 
+.myHeader{
+    background-color:white;
+}
+
 .myHeader h1{
     margin:0px 56px;
     font-size:45px;
@@ -75,13 +88,15 @@ body{
 .contentBox{
 	border:1px solid #d3d3d3;
 	border-radius:1%;
-	padding:10px 15px;
+    padding:10px 15px;
+    background-color:white;
 }
 
 .floatMy{
 	float:left;
     width:200px;
     height:200px;
+    margin:0px 20px;
 }
 
 .card-body{
@@ -94,11 +109,11 @@ body{
 }
 
 .myContainer{
-	flex:1;
+    flex:1; 
 }
 
 .footer{
-	border-top:5px solid gray;
+	border-top:5px solid rgb(160, 159, 159);
 	height:50px;
 	background-color:#4aaaa5;
 	color:white;
@@ -131,6 +146,10 @@ body{
 	padding-top:10px;	
 }
 
+.card-text{
+    word-wrap:none;
+}
+
 .myPortAll{
     display:flex;
     flex-direction: row;
@@ -156,7 +175,7 @@ body{
         text-align:center;
         color:#ffffff;
         padding:20px 25px;
-        font-family:"Georgia", Times, "Times New Roman", serif;
+        font-family: 'Ubuntu', sans-serif;
     }
 
     .nav{
@@ -196,23 +215,6 @@ body{
         align-self: center;
     }
 
-    /* .card .card-img{
-        width:200px;
-        height:auto;
-        align-self: center;
-    }
-
-    .card p{
-        position:absolute;
-        width:100%;
-        height:40px;
-        bottom:5px;
-        background-color:#4aaaa5;
-        text-align:center;
-        padding-top:10px;
-        
-    } */
-
 }
 
 @media screen and (min-width:671px) and (max-width:768px){
@@ -226,7 +228,7 @@ body{
         text-align:center;
         color:#ffffff;
         padding:20px 25px;
-        font-family:"Georgia", Times, "Times New Roman", serif;
+        font-family: 'Ubuntu', sans-serif;
     }
 
     .nav{
@@ -244,6 +246,7 @@ body{
         display:flex;
         flex-direction: column;
         flex-wrap:wrap;
+        justify-content: center;
     }
     .contentPara .myPort{
         padding:10px;
@@ -256,9 +259,21 @@ body{
 }
 
 @media screen and (min-width:769px) and (max-width:980px){
-    
+    .myPortAll{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width:981px){
-    
+    .content{
+        width:850px;
+        margin-right:auto;
+    }
+
+    .myPortAll{
+        justify-content: center;
+    }
 }
