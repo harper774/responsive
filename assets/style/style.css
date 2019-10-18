@@ -11,6 +11,12 @@ body{
     background-image:url(../picture/leather.png);
 }
 
+/* remove the scroll horizontal and vertical on page */
+body, html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 .content row{
 	width:100%;
 }
@@ -24,12 +30,12 @@ body{
 	background-color:#EDD5D1;
 	width:max-content;
 	color:#948282;
-	padding:25px;
+    padding:25px;
 }
 
+/* padding auto is not working so deleted */
 .myNav{
     margin:auto;
-    padding:auto;
     padding-right:70px;
 }
 
@@ -43,10 +49,17 @@ body{
 
 .nav-link{
     color:rgb(100, 98, 98);
-    padding:10px 5px;
+    margin:10px 5px;
+    padding:3px;
 }
 
-.nav-link:hover{
+.navHover:hover{
+    color:white;
+    background-color:rgb(191, 190, 190);
+    border-radius:20%;
+}
+
+.active{
     color:white;
     background-color:rgb(191, 190, 190);
     border-radius:20%;
@@ -213,7 +226,7 @@ body{
 
     .floatMy{
         flex:1;
-		width:280px;
+		width:70%;
         height:auto;
         align-self: center;
     }
@@ -227,8 +240,9 @@ body{
         padding:10px;
         flex:0 1 auto;
         align-self: center;
+        width:80%;
+        height:auto;
     }
-
 }
 
 @media screen and (min-width:671px) and (max-width:768px){
