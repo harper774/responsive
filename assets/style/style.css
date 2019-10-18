@@ -14,7 +14,7 @@ body{
 /* remove the scroll horizontal and vertical on page */
 body, html{
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .content row{
@@ -186,8 +186,9 @@ body, html{
 .contentPara .myPort{
     padding:10px;
     flex:0 1 auto;
-    width:350px;
+    width:auto;
     height:auto;
+    margin:auto;
 }
 
 @media screen and (max-width:670px){
@@ -274,34 +275,55 @@ body, html{
         display:flex;
         flex-direction: column;
         flex-wrap:wrap;
-        justify-content: center;
     }
     .contentPara .myPort{
         padding:10px;
         flex:0 1 auto;
         align-self: center;
+        width:77%;
+        height:auto;
     }
-
-
 
 }
 
 @media screen and (min-width:769px) and (max-width:980px){
-    .myPortAll{
+    /* .myPortAll{
         display:flex;
         flex-direction: row;
         flex-wrap:wrap;
         justify-content: center;
+    } */
+
+    .contentBox{
+        padding:30px;
+    }
+
+    .contentPara .col-sm-12, .col-md-6{
+        padding:10px;
     }
 }
 
 @media screen and (min-width:981px){
     .content{
         width:950px;
+        /* margin-left:10%; */
         margin-right:auto;
+        /* margin-right:auto; */
     }
 
-    .myPortAll{
-        justify-content: center;
+    .contentBox{
+        padding:30px;
+    }
+
+    .contentPara .col-sm-12, .col-md-6{
+        padding:10px;
+    }
+/* 
+    .myName h1{
+        margin-left:18%;
+    } */
+
+    .myNav{
+        padding-right:10%;
     }
 }
