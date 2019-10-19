@@ -101,7 +101,7 @@ body, html{
 .contentBox{
 	border:1px solid #d3d3d3;
 	border-radius:1%;
-    padding:10px 15px 25px 15px;
+    padding:10px 35px 25px 35px;
     background-color:white;
 }
 
@@ -137,10 +137,10 @@ body, html{
     text-align:center;
 }
 
-.footer span{
-    /* position: absolute;
-    margin-top:20px; */
-}
+/* .footer span{
+    position: absolute;
+    margin-top:20px;
+} */
 
 .card-img-overlay{
 	margin:0px;
@@ -232,7 +232,7 @@ body, html{
         align-self: center;
     }
 
-    .myPortAll{
+    /* .myPortAll{
         display:flex;
         flex-direction: column;
         flex-wrap:wrap;
@@ -243,7 +243,7 @@ body, html{
         align-self: center;
         width:80%;
         height:auto;
-    }
+    } */
 }
 
 @media screen and (min-width:671px) and (max-width:768px){
@@ -271,7 +271,7 @@ body, html{
         height:60px;
     }
 
-    .myPortAll{
+    /* .myPortAll{
         display:flex;
         flex-direction: column;
         flex-wrap:wrap;
@@ -282,7 +282,7 @@ body, html{
         align-self: center;
         width:77%;
         height:auto;
-    }
+    } */
 
 }
 
@@ -294,36 +294,36 @@ body, html{
         justify-content: center;
     } */
 
-    .contentBox{
+    /* .contentBox{
         padding:30px;
     }
 
     .contentPara .col-sm-12, .col-md-6{
         padding:10px;
-    }
+    } */
 }
 
 @media screen and (min-width:981px){
-    .content{
-        width:950px;
+    /* .content{ */
+        /* width:950px; */
         /* margin-left:10%; */
-        margin-right:auto;
+        /* margin:auto; */
         /* margin-right:auto; */
-    }
+    /* } */
 
-    .contentBox{
-        padding:30px;
+    /* .contentBox{
+        padding:50px;
     }
 
     .contentPara .col-sm-12, .col-md-6{
-        padding:10px;
-    }
+        padding:50px;
+    } */
 /* 
     .myName h1{
         margin-left:18%;
     } */
-
+/* 
     .myNav{
         padding-right:10%;
-    }
+    } */
 }
