@@ -133,8 +133,9 @@ body, html{
 }
 
 .footer{
-	border-top:1px solid rgb(214, 203, 203);
-	height:40px;
+    border-top:1px solid rgb(214, 203, 203);
+    padding-top:5px;
+	height:60px;
 	background-color:rgb(243, 210, 204);
 	color:#948282;
     text-align:center;
@@ -204,6 +205,11 @@ body, html{
 .btn:hover{
     transform:scale(1.1);
     transition:all 1s;
+}
+
+/* adding profile */
+#indexIntro a{
+    color: rgb(230, 163, 153);
 }
 
 @media screen and (max-width:670px){
