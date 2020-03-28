@@ -1,0 +1,23 @@
+{
+  "name": "responsive",
+  "version": "1.0.0",
+  "description": "In this project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harper774/responsive.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harper774/responsive/issues"
+  },
+  "homepage": "https://github.com/harper774/responsive#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
